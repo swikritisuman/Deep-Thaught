@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Project Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>DEEP <span>THOUGHT</span></h1>
+        <nav>
+            <button>Sign IN/Login</button>
+        </nav>
+    </header>
+
+    <div class="notice-board">
+        <div class="notice-tab" onclick="toggleNoticeBoard()">Notice Board</div>
+        <div class="notice-content" id="noticeContent">
+            <h3>Notice Board</h3>
+            <p>Important updates will be displayed here. Click on the notice tab to expand or hide this section.</p>
+        </div>
+    </div>
+
+    <main>
+        <section class="intro">
+            <h2>Technical Project Management</h2>
+            <p>Explore the world of management</p>
+            <p>Gain insights into project management, including strategic planning, scoping, team building, and execution.</p>
+        </section>
+
+        <section class="content-grid">
+            <div class="content-box video-box">
+                <h3>Technical Project Management</h3>
+                <p>Description: Stay Aligned! Scope of Agile, Specific & Accountable Strategic Approach</p>
+                <iframe src="https://www.youtube.com/embed/videoID" title="Technical Project Management" allowfullscreen></iframe>
+            </div>
+
+            <div class="content-box thread-box">
+                <h3>Thread Build</h3>
+                <p>Description: Watch the video, build threads, ask questions, and discuss this topic.</p>
+                <div class="thread-input">
+                    <input type="text" placeholder="Enter your thread...">
+                    <button>Post</button>
+                </div>
+                <div class="thread-display">
+                    <p><strong>User1:</strong> This is an example thread.</p>
+                    <p><strong>User2:</strong> I agree with this point.</p>
+                </div>
+            </div>
+
+            <div class="content-box pattern-box">
+                <h3>Structure Your Patterns</h3>
+                <p>Description: Write a 400-600 word article.</p>
+                <form>
+                    <input type="text" placeholder="Title">
+                    <textarea placeholder="Content"></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+
+            <div class="content-box method-box">
+                <h3>4SA Method</h3>
+                <p>Description: The 4SA Method - How to bring an idea into practice.</p>
+                <div>
+                    <h4>Introduction</h4>
+                    <p>The 4SA Method is about bringing ideas into practice.</p>
+                    <h4>Thread A</h4>
+                    <p>Are you going to develop your strategy?</p>
+                    <h4>Example</h4>
+                    <p>You have a concept; now let’s put it into action.</p>
+                </div>
+            </div>
+        </section>
+        
+        <div class="arrow-container">
+            <button id="expandArrow" class="expand-arrow">➤</button>
+            <div id="managementPopup" class="popup hidden">
+                <h2>Explore the world of management</h2>
+                <ul>
+                    <li>Technical Project Management</li>
+                    <li>Threadbuild</li>
+                    <li>Structure Your Pointers</li>
+                    <li>4SA Method</li>
+                </ul>
+                <button id="closePopup" class="close-button">Close</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
